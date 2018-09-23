@@ -1,0 +1,41 @@
+ .settings_form{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+ }
+  
+  .check{
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+    width: 60px;
+    height: 25px;
+    -webkit-appearance: none;
+    background: #f41000;
+    outline: none;
+    border-radius: 60px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    transition: .5s;
+  }
+  
+  .check:checked{
+    background: #25CED1;
+  }
+  
+  .check:before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 60px;
+    top: 0;
+    left: 0;
+    transform: scale(1.1);
+    box-shadow: 0 2px 15px rgba(0,0,0,.2);
+    background: #e3e3e3;
+    transition: .5s;
+  }
+  
+  .check:checked:before{
+    left: 60%;
+  }

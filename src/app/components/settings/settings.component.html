@@ -13,19 +13,19 @@
   </div>
   <div class="card-body">
     <form (submit)="onSubmit()">
-      <div class="form-group">
-        <label>Allow Registration</label>
-        <input type="checkbox" name="allowRegistration" [checked]="settings.allowRegistration" (change)="settings.allowRegistration = !settings.allowRegistration">
+      <div class="form-group settings_form">
+        <label class="label">Allow Registration</label>
+        <input type="checkbox" name="allowRegistration" class="check" [checked]="settings.allowRegistration" (change)="settings.allowRegistration = !settings.allowRegistration">
       </div>
 
-      <div class="form-group">
-          <label>Disable Balance On Add</label>
-          <input type="checkbox" name="disableBalanceOnAdd" [checked]="settings.disableBalanceOnAdd" (change)="settings.disableBalanceOnAdd = !settings.disableBalanceOnAdd">
+      <div class="form-group settings_form">
+          <label class="label">Disable Balance On Add</label>
+          <input type="checkbox" name="disableBalanceOnAdd" class="check" [checked]="settings.disableBalanceOnAdd" (change)="settings.disableBalanceOnAdd = !settings.disableBalanceOnAdd">
         </div>
 
-        <div class="form-group">
-            <label>Disable Balance On Edit</label>
-            <input type="checkbox" name="disableBalanceOnEdit" [checked]="settings.disableBalanceOnEdit" (change)="settings.disableBalanceOnEdit = !settings.disableBalanceOnEdit">
+        <div class="form-group settings_form">
+            <label class="label">Disable Balance On Edit</label>
+            <input type="checkbox" name="disableBalanceOnEdit" class="check" [checked]="settings.disableBalanceOnEdit" (change)="settings.disableBalanceOnEdit = !settings.disableBalanceOnEdit">
           </div>
 
         <input type="submit" value="Submit" class="btn btn-primary btn-block">

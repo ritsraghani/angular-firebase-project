@@ -25,8 +25,8 @@
         <h3 class="pull-right">
           Balance 
           <span
-            [class.text-danger]="hasBalance"
-            [class.text-success]="!hasBalance"
+            [class.text-danger]="!hasBalance"
+            [class.text-success]="hasBalance"
           >
             {{ client.balance | currency:"USD":"symbol" }}
           </span>
